@@ -1,0 +1,12 @@
+    <div class="container d-flex justify-content-between">       
+        <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;" *ngFor="let employeed of employees">
+            <div class="card-body">
+                <h5 class="card-title font-weight-bold text-center">{{employeed.name}} {{employeed.lastName}}</h5>
+                <h6 class="card-subtitle mb-2 text-muted text-center">{{employeed.cargo}}</h6>
+                <button class="btn btn-outline-secondary text-center" (click)='expandEmployeed(employeed)'>Mas información</button>
+            </div>
+        </div>
+    </div>
+
+
+    <app-employers-more-information></app-employers-more-information>

@@ -1,0 +1,99 @@
+    <div class="container d-flex justify-content-end"> 
+        <button class="btn btn-xs close " aria-label="Close" (click)='closeExpand()'>
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="container">
+        
+    <div class="bg-dark border-bottom-secondary" *ngFor="let Employeed of Employeed" id="cardExpand">
+        <div class="container d-flex col">
+          <div class="col-2 d-flex justify-content-center align-items-center bg-dark">
+              <img class="img-thumbnail w-50" src="../assets/img/documento.jpg" alt="documento">
+          </div>
+          <div class="col-5">
+            <div class="col">
+              <div class="text-center text-secondary bg-dark">Nombre</div>
+              <div class="text-center text-light bg-secondary">{{Employeed.name}}</div>
+            </div>
+            <div class="col">
+              <div class="text-center text-secondary bg-dark">Edad</div>
+              <div class="text-center text-light bg-secondary">{{Employeed.age}}</div>
+            </div>
+            <div class="col">
+              <div class="text-center text-secondary bg-dark">DNI</div>
+              <div class="text-center text-light bg-secondary">{{Employeed.dni}}</div>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="col">
+              <div class="text-center text-secondary bg-dark">Seguro</div>
+              <div class="text-center text-light bg-secondary">{{Employeed.seguro}}</div>
+            </div>
+            <div class="col">
+              <div class="text-center text-secondary bg-dark">Direccion</div>
+              <div class="text-center text-light bg-secondary">{{Employeed.direccion}}</div>
+            </div>
+            <div class="col">
+              <div class="text-center text-secondary bg-dark">Telefono</div>
+              <div class="text-center text-light bg-secondary">{{Employeed.phone}}</div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+              <div class="text-center text-secondary bg-dark">Email</div>
+              <div class="text-center text-light bg-secondary">{{Employeed.mail}}</div>
+        </div>
+        <div class="container d-flex col">
+          <div class="col-8">
+            <div class="col">
+              <div class="text-center text-secondary bg-dark">Departamento</div>
+              <div class="text-center text-light bg-secondary">{{Employeed.departamento}}</div>
+            </div>
+            <div class="col">
+              <div class="text-center text-secondary bg-dark">Cargo</div>
+              <div class="text-center text-light bg-secondary">{{Employeed.cargo}}</div>
+            </div>
+            <div class="col">
+              <div class="text-center text-secondary bg-dark">Salario</div>
+              <div class="text-center text-light bg-secondary">{{Employeed.salary}}</div>
+            </div>
+            <div class="col">
+              <div class="text-center text-secondary bg-dark">Fecha de comienzo</div>
+              <div class="text-center text-light bg-secondary">{{Employeed.comienzo}}</div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="col">
+              <div class="text-center text-secondary bg-dark">Observacion</div>
+              <div class="text-center text-light bg-secondary w-100 p-2">{{Employeed.observacion}}</div>
+            </div>
+          </div>
+        </div>
+        <div class="container d-flex col">
+          <div class="col-6">
+            <div class="col">
+              <div class="text-center text-secondary bg-dark">Formacion academica</div>
+              <div class="text-center text-light bg-secondary">{{Employeed.formacion}}</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="col">
+              <div class="text-center text-secondary bg-dark">Cursos y talleres</div>
+              <div class="text-center text-light bg-secondary">{{Employeed.curses}}</div>
+            </div>
+          </div>
+        </div>
+        <div class="container d-flex col">
+          <div class="col-12">
+            <div class="col">
+              <div class="text-center text-secondary bg-dark">Persona de emergencia</div>
+              <div class="text-center text-light bg-secondary">{{Employeed.emergencyName}}</div>
+            </div>
+            <div class="col">
+              <div class="text-center text-secondary bg-dark">Telefono de contacto</div>
+              <div class="text-center text-light bg-secondary">{{Employeed.emergencyPhone}}</div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
