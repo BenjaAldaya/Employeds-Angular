@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { EmployersListComponent } from './employers-list/employers-list.component';
 import { AboutComponent } from './about/about.component';
 import { EmployersMoreInformationComponent } from './employers-more-information/employers-more-information.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { EmployersMoreInformationComponent } from './employers-more-information/
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
